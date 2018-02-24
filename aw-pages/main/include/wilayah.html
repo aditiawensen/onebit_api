@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<title>AW</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" >
+<link rel="stylesheet" href="css/aw.css">
+<script src="lib/aw.js"></script>
+<script src="lib/jquery.min.js"></script>
+
+<body class="aw-blue">
+
+<h2 class="aw-center">Wilayah Bitung</h2>
+
+<div id="map" style="width:100%;height:400px;background:white"></div>
+
+<div class="aw-row aw-padding-small">
+	<div class="aw-row aw-padding-small aw-white aw-round-large">
+		<p style="text-align:justify">
+			&nbsp;&nbsp;&nbsp;Kota Bitung adalah salah satu kota di provinsi Sulawesi Utara. Kota ini memiliki perkembangan yang cepat karena terdapat pelabuhan laut yang mendorong percepatan pembangunan. Kota Bitung terletak di timur laut Tanah Minahasa. Wilayah Kota Bitung terdiri dari wilayah daratan yang berada di kaki gunung Dua Saudara dan sebuah pulau yang bernama Lembeh. Banyak penduduk Kota Bitung yang berasal dari suku Sangir, sehingga kebudayaan yang ada di Bitung tidak terlepas dari kebudayaan yang ada di wilayah Nusa Utara tersebut. Kota Bitung merupakan kota industri, khususnya industri perikanan.
+		</p>
+	</div>
+</div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(1.4453376,125.1856498), zoom: 15
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8TLRYpMLYcS_4JZpTVrfVwkA8e4CLOp4&callback=myMap"></script>
+
+</body>
+</html>

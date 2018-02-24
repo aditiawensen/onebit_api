@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<title>AW</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" >
+<link rel="stylesheet" href="css/aw.css">
+<script src="lib/aw.js"></script>
+<script src="lib/jquery.min.js"></script>
+
+<body style="background-color:#990000;background-image:url('img/background-blue.jpg');background-size:cover">
+
+<div id="overlay" class="aw-overlay aw-animate-opacity" onclick="aw.hide('#overlay')" style="display:none"></div>
+
+<div class="aw-center aw-animate-opacity">
+	<div>
+		<img id="icon-user" class="aw-round-large" src="img/user.png" width="70px" height="70px" style="position:absolute;z-index:7;left:50%;top:170px;margin-left:-35px">
+	  	<svg height="413" width="100%" viewBox="0 0 413 413" style="background:rgba(0,0,0,.5);padding-top:7px;padding-left:3px;padding-right:3px" class="aw-card-4">
+	  		<defs>
+		        <linearGradient id="icon1-gradient">
+		            <stop offset="0" stop-color="#ff4dd2">
+		            	<animate attributeName="stop-color" values="#ff4dd2;#ffb3ec;#ff4dd2;#ff4dd2;#ff4dd2;#ff4dd2" dur="4s" repeatCount="indefinite" />
+		            </stop>
+		            <stop offset="100%" stop-color="#ffb3ec">
+		            	<animate attributeName="stop-color" values="#ff4dd2;#ff4dd2;#ffb3ec;#ff4dd2;#ff4dd2;#ff4dd2" dur="4s" repeatCount="indefinite" />
+		            </stop>
+		        </linearGradient>
+		    </defs>
+	  		<g id="icon1">
+		  		<path d="M0 0 L0 200 L200 200 Z" fill="url(#icon1-gradient)"/>
+		  		<svg width="70" height="70" x="30" y="100" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1472 0q26 0 45 19t19 45v1664q0 26-19 45t-45 19h-1280q-26 0-45-19t-19-45v-1664q0-26 19-45t45-19h1280zm-832 288v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm0 256v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm0 256v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm0 256v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm-128 320v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm512 1280v-192q0-14-9-23t-23-9h-320q-14 0-23 9t-9 23v192q0 14 9 23t23 9h320q14 0 23-9t9-23zm0-512v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm256 1024v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23z" fill="#fff"/></svg>
+		  		<text x="5" y="195" fill="white">Kantor</text>
+			</g>
+			<defs>
+		        <linearGradient id="icon2-gradient">
+		            <stop offset="0%" stop-color="#3399ff">
+			            <animate attributeName="stop-color" values="#3399ff;#99ccff;#3399ff;#3399ff;#3399ff;#3399ff" dur="4s" repeatCount="indefinite" />
+			        </stop>
+			        <stop offset="100%" stop-color="#99ccff">
+			            <animate attributeName="stop-color" values="#3399ff;#3399ff;#99ccff;#3399ff;#3399ff;#3399ff" dur="4s" repeatCount="indefinite" />
+			        </stop>
+		        </linearGradient>
+		    </defs>
+			<g id="icon2">
+				<path d="M205 0 L5 0 L205 200 Z" fill="url(#icon2-gradient)"/>
+				<svg width="70" height="70" x="105" y="30" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1062 150q-317 121-556 362.5t-358 560.5q-20-89-20-176 0-208 102.5-384.5t278.5-279 384-102.5q82 0 169 19zm269 119q93 65 164 155-389 113-674.5 400.5t-396.5 676.5q-93-72-155-162 112-386 395-671t667-399zm-733 1334q115-356 379.5-622t619.5-384q40 92 54 195-292 120-516 345t-343 518q-103-14-194-52zm1066 58q-193-50-367-115-135 84-290 107 109-205 274-370.5t369-275.5q-21 152-101 284 65 175 115 370z" fill="#fff"/></svg>
+		  		<text x="117" y="17" fill="white">Pengaduan</text>
+			</g>
+			<defs>
+		        <linearGradient id="icon3-gradient">
+		            <stop offset="0" stop-color="#e699ff">
+		            	<animate attributeName="stop-color" values="#c61aff;#c61aff;#c61aff;#c61aff;#c61aff;#e699ff;#c61aff;#c61aff;#c61aff;#c61aff;#c61aff;#c61aff" dur="4s" repeatCount="indefinite" />
+		            </stop>
+		            <stop offset="100%" stop-color="#c61aff">
+		            	<animate attributeName="stop-color" values="#c61aff;#c61aff;#c61aff;#c61aff;#c61aff;#c61aff;#e699ff;#c61aff;#c61aff;#c61aff;#c61aff;#c61aff" dur="4s" repeatCount="indefinite" />
+		            </stop>
+		        </linearGradient>
+		    </defs>
+			<g id="icon3">
+				<path d="M208 0 L208 200 L408 0 Z" fill="url(#icon3-gradient)"/>
+				<svg width="70" height="70" x="235" y="30" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M896 512h-384v384h384v-384zm128 640v128h-640v-128h640zm0-768v640h-640v-640h640zm640 768v128h-512v-128h512zm0-256v128h-512v-128h512zm0-256v128h-512v-128h512zm0-256v128h-512v-128h512zm-1536 960v-960h-128v960q0 26 19 45t45 19 45-19 19-45zm1664 0v-1088h-1536v1088q0 33-11 64h1483q26 0 45-19t19-45zm128-1216v1216q0 80-56 136t-136 56h-1664q-80 0-136-56t-56-136v-1088h256v-128h1792z" fill="#fff"/></svg>
+				<text x="214" y="17" fill="white">Berita</text>
+			</g>
+			<defs>
+		        <linearGradient id="icon4-gradient">
+		            <stop offset="0" stop-color="#ffc299">
+		            	<animate attributeName="stop-color" values="#ff6600;#ff6600;#ff6600;#ff6600;#ff6600;#ffc299;#ff6600;#ff6600;#ff6600;#ff6600;#ff6600;#ff6600" dur="4s" repeatCount="indefinite" />
+		            </stop>
+		            <stop offset="100%" stop-color="#ff6600">
+		            	<animate attributeName="stop-color" values="#ff6600;#ff6600;#ff6600;#ff6600;#ff6600;#ff6600;#ffc299;#ff6600;#ff6600;#ff6600;#ff6600;#ff6600" dur="4s" repeatCount="indefinite" />
+		            </stop>
+		        </linearGradient>
+		    </defs>
+			<g id="icon4">
+				<path d="M413 200 L213 200 L413 0 Z" fill="url(#icon4-gradient)"/>
+				<svg width="70" height="70" x="315" y="100" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1792 1248v320q0 40-28 68t-68 28h-320q-40 0-68-28t-28-68v-320q0-40 28-68t68-28h96v-192h-512v192h96q40 0 68 28t28 68v320q0 40-28 68t-68 28h-320q-40 0-68-28t-28-68v-320q0-40 28-68t68-28h96v-192h-512v192h96q40 0 68 28t28 68v320q0 40-28 68t-68 28h-320q-40 0-68-28t-28-68v-320q0-40 28-68t68-28h96v-192q0-52 38-90t90-38h512v-192h-96q-40 0-68-28t-28-68v-320q0-40 28-68t68-28h320q40 0 68 28t28 68v320q0 40-28 68t-68 28h-96v192h512q52 0 90 38t38 90v192h96q40 0 68 28t28 68z" fill="#fff"/></svg>
+				<text x="365" y="195" fill="white">SKPD</text>
+			</g>
+			<defs>		    
+		        <linearGradient id="icon5-gradient">
+		            <stop offset="0" stop-color="#ff6600">
+		            	<animate attributeName="stop-color" values="#ff6600;#ffc299;#ff6600;#ff6600;#ff6600;#ff6600" dur="4s" repeatCount="indefinite" />
+		            </stop>
+		            <stop offset="100%" stop-color="#ffc299">
+		            	<animate attributeName="stop-color" values="#ff6600;#ff6600;#ffc299;#ff6600;#ff6600;#ff6600" dur="4s" repeatCount="indefinite" />
+		            </stop>
+		        </linearGradient>
+		    </defs>
+			<g id="icon5">
+				<path d="M0 203 L0 403 L200 203 Z" fill="url(#icon5-gradient)"/>
+				<svg width="80" height="65" x="22" y="230" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1696 896q93 0 158.5 65.5t65.5 158.5v384q0 14-9 23t-23 9h-96v64q0 80-56 136t-136 56-136-56-56-136v-64h-1024v64q0 80-56 136t-136 56-136-56-56-136v-64h-96q-14 0-23-9t-9-23v-384q0-93 65.5-158.5t158.5-65.5h28l105-419q23-94 104-157.5t179-63.5h128v-224q0-14 9-23t23-9h448q14 0 23 9t9 23v224h128q98 0 179 63.5t104 157.5l105 419h28zm-1504 480q66 0 113-47t47-113-47-113-113-47-113 47-47 113 47 113 113 47zm196-480h1016l-89-357q-2-8-14-17.5t-21-9.5h-768q-9 0-21 9.5t-14 17.5zm1212 480q66 0 113-47t47-113-47-113-113-47-113 47-47 113 47 113 113 47z" fill="#fff"/></svg>
+				<text x="5" y="220" fill="white">Pariwisata</text>
+			</g>
+			<defs>
+		        <linearGradient id="icon6-gradient">
+		            <stop offset="0%" stop-color="#cc33ff">
+			            <animate attributeName="stop-color" values="#cc33ff;#ecb3ff;#cc33ff;#cc33ff;#cc33ff;#cc33ff" dur="4s" repeatCount="indefinite" />
+			        </stop>
+			        <stop offset="100%" stop-color="#ecb3ff">
+			            <animate attributeName="stop-color" values="#cc33ff;#cc33ff;#ecb3ff;#cc33ff;#cc33ff;#cc33ff" dur="4s" repeatCount="indefinite" />
+			        </stop>
+		        </linearGradient>
+		    </defs>
+			<g id="icon6">
+				<path d="M205 403 L5 403 L205 203 Z" fill="url(#icon6-gradient)"/>
+				<svg width="70" height="70" x="105" y="300" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1408 768q0 139-94 257t-256.5 186.5-353.5 68.5q-86 0-176-16-124 88-278 128-36 9-86 16h-3q-11 0-20.5-8t-11.5-21q-1-3-1-6.5t.5-6.5 2-6l2.5-5 3.5-5.5 4-5 4.5-5 4-4.5q5-6 23-25t26-29.5 22.5-29 25-38.5 20.5-44q-124-72-195-177t-71-224q0-139 94-257t256.5-186.5 353.5-68.5 353.5 68.5 256.5 186.5 94 257zm384 256q0 120-71 224.5t-195 176.5q10 24 20.5 44t25 38.5 22.5 29 26 29.5 23 25q1 1 4 4.5t4.5 5 4 5 3.5 5.5l2.5 5 2 6 .5 6.5-1 6.5q-3 14-13 22t-22 7q-50-7-86-16-154-40-278-128-90 16-176 16-271 0-472-132 58 4 88 4 161 0 309-45t264-129q125-92 192-212t67-254q0-77-23-152 129 71 204 178t75 230z" fill="#fff"/></svg>
+				<text x="140" y="395" fill="white">Obrolan</text>
+			</g>
+			<defs>
+		        <linearGradient id="icon7-gradient">
+		            <stop offset="0" stop-color="#99ccff">
+		            	<animate attributeName="stop-color" values="#3399ff;#3399ff;#3399ff;#3399ff;#3399ff;#99ccff;#3399ff;#3399ff;#3399ff;#3399ff;#3399ff;#3399ff" dur="4s" repeatCount="indefinite" />
+		            </stop>
+		            <stop offset="100%" stop-color="#3399ff">
+		            	<animate attributeName="stop-color" values="#3399ff;#3399ff;#3399ff;#3399ff;#3399ff;#3399ff;#99ccff;#3399ff;#3399ff;#3399ff;#3399ff;#3399ff" dur="4s" repeatCount="indefinite" />
+		            </stop>
+		        </linearGradient>
+		    </defs>
+			<g id="icon7">
+		  		<path d="M208 203 L208 403 L408 403 Z" fill="url(#icon7-gradient)"/>
+		  		<svg width="70" height="70" x="235" y="303" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1024 1376v-192q0-14-9-23t-23-9h-192q-14 0-23 9t-9 23v192q0 14 9 23t23 9h192q14 0 23-9t9-23zm256-672q0-88-55.5-163t-138.5-116-170-41q-243 0-371 213-15 24 8 42l132 100q7 6 19 6 16 0 25-12 53-68 86-92 34-24 86-24 48 0 85.5 26t37.5 59q0 38-20 61t-68 45q-63 28-115.5 86.5t-52.5 125.5v36q0 14 9 23t23 9h192q14 0 23-9t9-23q0-19 21.5-49.5t54.5-49.5q32-18 49-28.5t46-35 44.5-48 28-60.5 12.5-81zm384 192q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z" fill="#fff"/></svg>
+				<text x="214" y="395" fill="white">Bantuan</text>
+			</g>
+			<defs>
+		        <linearGradient id="icon8-gradient">
+		            <stop offset="0" stop-color="#ffb3ec">
+		            	<animate attributeName="stop-color" values="#ff4dd2;#ff4dd2;#ff4dd2;#ff4dd2;#ff4dd2;#ffb3ec;#ff4dd2;#ff4dd2;#ff4dd2;#ff4dd2;#ff4dd2;#ff4dd2" dur="4s" repeatCount="indefinite" />
+		            </stop>
+		            <stop offset="100%" stop-color="#ff4dd2">
+		            	<animate attributeName="stop-color" values="#ff4dd2;#ff4dd2;#ff4dd2;#ff4dd2;#ff4dd2;#ff4dd2;#ffb3ec;#ff4dd2;#ff4dd2;#ff4dd2;#ff4dd2;#ff4dd2" dur="4s" repeatCount="indefinite" />
+		            </stop>
+		        </linearGradient>
+		    </defs>
+			<g id="icon8">
+				<path d="M413 203 L213 203 L413 403 Z" fill="url(#icon8-gradient)"/>
+				<svg width="70" height="70" x="315" y="235" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5-103 385.5-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103zm274 521q-2 1-9.5 9.5t-13.5 9.5q2 0 4.5-5t5-11 3.5-7q6-7 22-15 14-6 52-12 34-8 51 11-2-2 9.5-13t14.5-12q3-2 15-4.5t15-7.5l2-22q-12 1-17.5-7t-6.5-21q0 2-6 8 0-7-4.5-8t-11.5 1-9 1q-10-3-15-7.5t-8-16.5-4-15q-2-5-9.5-10.5t-9.5-10.5q-1-2-2.5-5.5t-3-6.5-4-5.5-5.5-2.5-7 5-7.5 10-4.5 5q-3-2-6-1.5t-4.5 1-4.5 3-5 3.5q-3 2-8.5 3t-8.5 2q15-5-1-11-10-4-16-3 9-4 7.5-12t-8.5-14h5q-1-4-8.5-8.5t-17.5-8.5-13-6q-8-5-34-9.5t-33-.5q-5 6-4.5 10.5t4 14 3.5 12.5q1 6-5.5 13t-6.5 12q0 7 14 15.5t10 21.5q-3 8-16 16t-16 12q-5 8-1.5 18.5t10.5 16.5q2 2 1.5 4t-3.5 4.5-5.5 4-6.5 3.5l-3 2q-11 5-20.5-6t-13.5-26q-7-25-16-30-23-8-29 1-5-13-41-26-25-9-58-4 6-1 0-15-7-15-19-12 3-6 4-17.5t1-13.5q3-13 12-23 1-1 7-8.5t9.5-13.5.5-6q35 4 50-11 5-5 11.5-17t10.5-17q9-6 14-5.5t14.5 5.5 14.5 5q14 1 15.5-11t-7.5-20q12 1 3-17-5-7-8-9-12-4-27 5-8 4 2 8-1-1-9.5 10.5t-16.5 17.5-16-5q-1-1-5.5-13.5t-9.5-13.5q-8 0-16 15 3-8-11-15t-24-8q19-12-8-27-7-4-20.5-5t-19.5 4q-5 7-5.5 11.5t5 8 10.5 5.5 11.5 4 8.5 3q14 10 8 14-2 1-8.5 3.5t-11.5 4.5-6 4q-3 4 0 14t-2 14q-5-5-9-17.5t-7-16.5q7 9-25 6l-10-1q-4 0-16 2t-20.5 1-13.5-8q-4-8 0-20 1-4 4-2-4-3-11-9.5t-10-8.5q-46 15-94 41 6 1 12-1 5-2 13-6.5t10-5.5q34-14 42-7l5-5q14 16 20 25-7-4-30-1-20 6-22 12 7 12 5 18-4-3-11.5-10t-14.5-11-15-5q-16 0-22 1-146 80-235 222 7 7 12 8 4 1 5 9t2.5 11 11.5-3q9 8 3 19 1-1 44 27 19 17 21 21 3 11-10 18-1-2-9-9t-9-4q-3 5 .5 18.5t10.5 12.5q-7 0-9.5 16t-2.5 35.5-1 23.5l2 1q-3 12 5.5 34.5t21.5 19.5q-13 3 20 43 6 8 8 9 3 2 12 7.5t15 10 10 10.5q4 5 10 22.5t14 23.5q-2 6 9.5 20t10.5 23q-1 0-2.5 1t-2.5 1q3 7 15.5 14t15.5 13q1 3 2 10t3 11 8 2q2-20-24-62-15-25-17-29-3-5-5.5-15.5t-4.5-14.5q2 0 6 1.5t8.5 3.5 7.5 4 2 3q-3 7 2 17.5t12 18.5 17 19 12 13q6 6 14 19.5t0 13.5q9 0 20 10t17 20q5 8 8 26t5 24q2 7 8.5 13.5t12.5 9.5l16 8 13 7q5 2 18.5 10.5t21.5 11.5q10 4 16 4t14.5-2.5 13.5-3.5q15-2 29 15t21 21q36 19 55 11-2 1 .5 7.5t8 15.5 9 14.5 5.5 8.5q5 6 18 15t18 15q6-4 7-9-3 8 7 20t18 10q14-3 14-32-31 15-49-18 0-1-2.5-5.5t-4-8.5-2.5-8.5 0-7.5 5-3q9 0 10-3.5t-2-12.5-4-13q-1-8-11-20t-12-15q-5 9-16 8t-16-9q0 1-1.5 5.5t-1.5 6.5q-13 0-15-1 1-3 2.5-17.5t3.5-22.5q1-4 5.5-12t7.5-14.5 4-12.5-4.5-9.5-17.5-2.5q-19 1-26 20-1 3-3 10.5t-5 11.5-9 7q-7 3-24 2t-24-5q-13-8-22.5-29t-9.5-37q0-10 2.5-26.5t3-25-5.5-24.5q3-2 9-9.5t10-10.5q2-1 4.5-1.5t4.5 0 4-1.5 3-6q-1-1-4-3-3-3-4-3 7 3 28.5-1.5t27.5 1.5q15 11 22-2 0-1-2.5-9.5t-.5-13.5q5 27 29 9 3 3 15.5 5t17.5 5q3 2 7 5.5t5.5 4.5 5-.5 8.5-6.5q10 14 12 24 11 40 19 44 7 3 11 2t4.5-9.5 0-14-1.5-12.5l-1-8v-18l-1-8q-15-3-18.5-12t1.5-18.5 15-18.5q1-1 8-3.5t15.5-6.5 12.5-8q21-19 15-35 7 0 11-9-1 0-5-3t-7.5-5-4.5-2q9-5 2-16 5-3 7.5-11t7.5-10q9 12 21 2 7-8 1-16 5-7 20.5-10.5t18.5-9.5q7 2 8-2t1-12 3-12q4-5 15-9t13-5l17-11q3-4 0-4 18 2 31-11 10-11-6-20 3-6-3-9.5t-15-5.5q3-1 11.5-.5t10.5-1.5q15-10-7-16-17-5-43 12zm-163 877q206-36 351-189-3-3-12.5-4.5t-12.5-3.5q-18-7-24-8 1-7-2.5-13t-8-9-12.5-8-11-7q-2-2-7-6t-7-5.5-7.5-4.5-8.5-2-10 1l-3 1q-3 1-5.5 2.5t-5.5 3-4 3 0 2.5q-21-17-36-22-5-1-11-5.5t-10.5-7-10-1.5-11.5 7q-5 5-6 15t-2 13q-7-5 0-17.5t2-18.5q-3-6-10.5-4.5t-12 4.5-11.5 8.5-9 6.5-8.5 5.5-8.5 7.5q-3 4-6 12t-5 11q-2-4-11.5-6.5t-9.5-5.5q2 10 4 35t5 38q7 31-12 48-27 25-29 40-4 22 12 26 0 7-8 20.5t-7 21.5q0 6 2 16z" fill="#fff"/></svg>
+				<text x="347" y="220" fill="white">Wilayah</text>
+			</g>
+		</svg>
+	</div>
+</div>
+
+<div class="aw-card-4 aw-animate-zoom">
+	<div class="aw-row aw-center" style="background-color:#0055FF">
+		<span class="aw-xlarge aw-text-white aw-font-sansation-bold">Bitung Smart City</span>
+	</div>
+	<div class="aw-row aw-blue aw-center aw-padding-small aw-font-sansation-bold">
+		<span>Bitung Smart City adalah konsep untuk menjadikan kota lebih baik dengan pemanfaatan teknologi informatika.</span>
+	</div>
+</div>
+
+<br>
+
+<div class="aw-row">
+	<iframe src="http://pdambitung.96.lt/bsc/aw-pages/include/iklan.html" frameBorder="0" style="overflow: hidden; height: 100%;
+        width: 100%; position: absolute;" height="100%" width="100%"></iframe>
+</div>
+
+<script>
+	$('#icon1').click(function(){
+		window.app.openKantor();
+	});
+	$('#icon2').click(function(){
+		window.app.openPengaduan();
+	});
+	$('#icon3').click(function(){
+		window.app.openBerita();
+	});
+	$('#icon4').click(function(){
+		window.app.openSKPD();
+	});
+	$('#icon5').click(function(){
+		window.app.openPariwisata();
+	});
+	$('#icon6').click(function(){
+		window.app.openObrolan();
+	});
+	$('#icon7').click(function(){
+		window.app.openBantuan();
+	});
+	$('#icon8').click(function(){
+		window.app.openWilayah();
+	});
+	$('#icon-user').click(function(){
+		window.app.openUser();
+	});
+</script>
+	
+<br><br><br>
+
+</body>
+
+</html>
